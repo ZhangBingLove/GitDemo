@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/x40"
+    tools:context="com.example.zhangbing.love.activity.ConstraintLayoutActivity">
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="@dimen/x400"
+        android:layout_height="@dimen/y200"
+        android:gravity="center"
+        android:text="增加学生"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_query_all"
+        android:layout_width="@dimen/x400"
+        android:layout_height="@dimen/y200"
+        android:gravity="center"
+        android:text="查询全部"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_insert" />
+
+    <Button
+        android:id="@+id/btn_query_one"
+        android:layout_width="@dimen/x400"
+        android:layout_height="@dimen/y200"
+        android:gravity="center"
+        android:text="查询某一条数据"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_query_all" />
+
+    <Button
+        android:id="@+id/start_activity"
+        android:layout_width="@dimen/x400"
+        android:layout_height="@dimen/y200"
+        android:gravity="center"
+        android:text="打开一个Activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_query_one" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y20"
+        android:text="测试测试测试"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_activity" />
+
+
+</android.support.constraint.ConstraintLayout>

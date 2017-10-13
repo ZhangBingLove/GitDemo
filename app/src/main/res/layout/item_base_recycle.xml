@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y400"
+        android:padding="@dimen/x40">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="@dimen/x400"
+            android:layout_height="match_parent"
+            android:background="#f00" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="@dimen/x400"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="测试测试测试测试" />
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y120"
+            android:layout_below="@id/tv2"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toRightOf="@id/tv1"
+            android:text="测试子布局点击1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y120"
+            android:layout_below="@id/btn1"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toRightOf="@id/tv1"
+            android:text="测试子布局点击1" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

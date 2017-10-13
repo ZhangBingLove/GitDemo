@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhangbing.love.activity.Text2Activity">
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="@dimen/x500"
+        android:layout_height="@dimen/y300"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x20"
+        android:text="点击弹出用Activity做的弹出框" />
+
+    <com.example.zhangbing.love.view.CustomTitleVIew
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y100"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        app:titleText="测试"
+        app:titleTextColor="#f00"
+        app:titleTextSize="@dimen/y30" />
+
+
+</RelativeLayout>
