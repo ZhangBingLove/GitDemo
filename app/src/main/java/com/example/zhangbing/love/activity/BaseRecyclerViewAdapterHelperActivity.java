@@ -1,11 +1,9 @@
 package com.example.zhangbing.love.activity;
 
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.zhangbing.love.R;
@@ -76,6 +74,7 @@ public class BaseRecyclerViewAdapterHelperActivity extends BaseActivity {
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 showToast("item" + position + "被点击了");
             }
+
         });
 
         myTestAdapter.setOnItemLongClickListener(new BaseQuickAdapter.OnItemLongClickListener() {

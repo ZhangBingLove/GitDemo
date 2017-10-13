@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.example.zhangbing.love.R;
+import com.example.zhangbing.love.utils.ActivityManagerUtil;
 
 import butterknife.ButterKnife;
 
@@ -37,6 +38,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "Activity生命周期 --------> onCreate()");
+        ActivityManagerUtil.getInstance().popOneActivity(this);
 
         if (getAllowFullScreen()) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -101,6 +103,11 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ActivityManagerUtil.getInstance().pushOneActivity(this);
+    }
 
     @Override
     public void startActivity(Intent intent) {
